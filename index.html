@@ -5,7 +5,7 @@
         <meta name="format-detection" content="telephone=no" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 		
-		<meta name="viewport" content="width=device-width, initial-scale=1">	
+		<meta name="viewport" content="userscalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, height=device-height, width=device-width, target-densitydpi=device-dpi" />
 		<link rel = "stylesheet" type = "text/css" href = "format.css">   <!-- Link to style sheet named format.css -->
 		<script type="text/javascript" src="cordova.js"></script> 
         <script type="text/javascript" src="js/index.js"></script>
@@ -27,7 +27,17 @@
 		<br>
 		<div class="actions">
 			<button id="refreshButton" onClick = "conn()">Connect</button>
-			<button class="plants" onclick="updateS(0, 13, 'WET', 8)">My Garden</button>
+			<button class="plants" onclick="myGarden()">My Garden</button>
+		</div>
+		<div id="selector">
+			<text1>Tomato</text1>
+			<text2>Pepper</text2>
+			<text3>Cabbage</text3>
+			<form>
+			<input type="radio" name="planttype" id="tomato">
+			<input type="radio" name="planttype" id="pepper"> 
+			<input type="radio" name="planttype" id="cabbage">
+			</form>
 		</div>
 		<div id="notarea">
 			<p id="tempinfo" style="margin-top: 20px;">&nbsp;</p>
@@ -35,7 +45,7 @@
 			<p id="lightinfo">&nbsp;</p>
 		</div>
 		<br>
-		<div id="sendDiv"></div>
+		<div id="sendDiv" style="display:none;"></div>
 		<br><br>
 		<!--<div class="actions">
 			<button id="disconnectButton"onClick="disconnect()">Disconnect</button>

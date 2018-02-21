@@ -6,7 +6,26 @@ body{
 	background-image: url(leaf.jpg);
 	width:100%;
 }
-
+text1, text2, text3{
+	margin-left: 40px;
+}
+#selector
+{
+	text-align: center;
+	background-color:#ffffcc;
+	width:80%;
+	margin:auto;
+	border-radius: 30px;
+	opacity: 0.7;
+}
+#selector input[type="radio"] {
+    -ms-transform: scale(2.5); /* IE 9 */
+    -webkit-transform: scale(2.5); /* Chrome, Safari, Opera */
+    transform: scale(2.5);
+	margin-left: 40px;
+	margin-top: 40px;
+	
+}
 #notarea
 {
 	text-align: center;

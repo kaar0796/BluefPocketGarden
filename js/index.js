@@ -88,7 +88,7 @@ function onConnError(){
 }
 
  function onData(data){ // data received from Arduino
-	document.getElementById("receiveDiv").innerHTML =  "Received: " + bytesToString(data) + "<br/>";
+	document.getElementById("receiveDiv").innerHTML = bytesToString(data);
 }
 
 function data(txt){
@@ -114,10 +114,22 @@ function onDisconnect(){
 function onError(reason)  {
 	alert("ERROR: " + reason); // real apps should use notification.alert
 }
-function updateS(plant, temp, light, moist)
+function myGarden(){
+	if(document.getElementById('tomato').checked) {
+		updateS(13, 8, "WET");
+	}
+	else if(document.getElementById('pepper').checked) {
+		updateS(16, 8, "WET");
+	}
+	else if(document.getElementById('cabbage').checked) {
+		updateS(15, 6, "SOAKED");
+	}
+	
+}
+function updateS(temp, light, moist)
 {
 	/*DEAFULT VALUES - DONT CHANGE*/
-	var p1moist = "WET";
+	var p1moist = document.getElementById("sendDiv").innerHTML;
 	var p1temp = 13;
 	var p1light = 8;
 	if(moist != p1moist) // Check if moist sensor information is different that the default values
