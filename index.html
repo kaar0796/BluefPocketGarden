@@ -13,16 +13,22 @@
     </head>
      <body onload="onLoad()">
 
-		<h1>Pocketgarden test</h1>
+		<div id="headtitle">
+			<h1>POCKET GARDEN</h1>
+			<h2>A Smarter Way to Grow</h2>
+		</div>
            
 		<ul id="bleDeviceList"> </ul>  
-		<button id="refreshButton" onClick = "refreshDeviceList()">Refresh</button>
+		<!--<button id="refreshButton" onClick = "refreshDeviceList()">Refresh</button>-->
 		<br>
 		<div id="statusDiv">Status: Disconnected</div>
 		<div id="bleId">DeviceId:</div>
 		<div id="debugDiv"></div>
 		<br>
-		<button class="plants" onclick="updateS(0, 'WET', 13, 8)">My Garden</button>
+		<div class="actions">
+			<button id="refreshButton" onClick = "conn()">Connect</button>
+			<button class="plants" onclick="updateS(0, 13, 'WET', 8)">My Garden</button>
+		</div>
 		<div id="notarea">
 			<p id="tempinfo" style="margin-top: 20px;">&nbsp;</p>
 			<p id="moistinfo">&nbsp;</p>
@@ -31,7 +37,9 @@
 		<br>
 		<div id="sendDiv"></div>
 		<br><br>
-		<button id="disconnectButton"onClick="disconnect()">Disconnect</button>
+		<!--<div class="actions">
+			<button id="disconnectButton"onClick="disconnect()">Disconnect</button>
+		</div>-->
 		<div id="receiveDiv"></div>
     </body>
 </html>

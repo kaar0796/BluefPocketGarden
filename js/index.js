@@ -65,7 +65,8 @@ function onDiscoverDevice(device){
 
 function conn(){
 	
-	var  deviceTouch= event.srcElement.innerHTML;
+	//var  deviceTouch= event.srcElement.innerHTML;
+	var  deviceTouch= "GREENHOUSE,D9:E3:F8:B6:B1:86"
 	document.getElementById("debugDiv").innerHTML =""; // empty debugDiv
 	var deviceTouchArr = deviceTouch.split(",");
 	ConnDeviceId = deviceTouchArr[1];

@@ -1,8 +1,50 @@
+@font-face{
+	font-family: myfont, impact, sans-serif;:myFont;
+	src: url(BebasNeue-Regular.ttf);
+}
 body{
-	background-color: green;
-}	
-img{
-	width: 100%;	
+	background-image: url(leaf.jpg);
+	width:100%;
+}
+
+#notarea
+{
+	text-align: center;
+	background-color:#ffffcc;
+	width:80%;
+	margin:auto;
+	border-radius: 30px;
+	opacity: 0.7;
+}
+#notarea p{
+	font-family: myfont, impact, sans-serif;
+	font-size: 30px;
+	
+}
+#headtitle{
+	color: #fff;
+	text-align:center;
+	font-size: 40px;
+	font-family: myfont, impact, sans-serif;
+	opacity: 0.8;
+	margin:auto;
+	min-width:100%;
+	margin-bottom:2px solid #fff;
+	
+}
+.actions{
+	width:75%;
+	margin:auto;
+}
+.actions button{
+	background-color: #4CAF50; /* Green */
+	font-size: 100px;
+	color: #001f33;
+	font-family: myfont, impact, sans-serif;
+	opacity: 0.8;
+	margin:auto;
+	min-width:100%;
+	border-radius: 30px;
 }
 
 /* The content div soround
@@ -11,7 +53,7 @@ img{
   * and centret.
   */
 #content {
-	width: 75%;
+	width: 90%;
 	margin: auto;
 }
 
