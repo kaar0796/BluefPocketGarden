@@ -129,9 +129,19 @@ function myGarden(){
 function updateS(temp, light, moist)
 {
 	/*DEAFULT VALUES - DONT CHANGE*/
+	if(document.getElementById('tomato').checked) {
+		var p1temp = 13;
+		var p1light = 8;
+	}
+	else if(document.getElementById('pepper').checked) {
+		var p1temp = 16;
+		var p1light = 8;
+	}
+	else if(document.getElementById('cabbage').checked) {
+		var p1temp = 15;
+		var p1light = 6;
+	}
 	var p1moist = document.getElementById("receiveDiv").innerHTML;
-	var p1temp = 13;
-	var p1light = 8;
 	if(moist != p1moist) // Check if moist sensor information is different that the default values
 	{
 		document.getElementById("moistinfo").innerHTML = "Moisture is "+moist+" and it should be "+p1moist; // If not ok, shows which changes need to be done.
