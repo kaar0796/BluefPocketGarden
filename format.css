@@ -1,5 +1,5 @@
 @font-face{
-	font-family: myfont, impact, sans-serif;:myFont;
+	font-family:myFont;
 	src: url(BebasNeue-Regular.ttf);
 }
 body{
@@ -37,7 +37,7 @@ text1, text2, text3{
 	opacity: 0.7;
 }
 #notarea p{
-	font-family: myfont, impact, sans-serif;
+	font-family: myfont;
 	font-size: 30px;
 	
 }
@@ -45,7 +45,7 @@ text1, text2, text3{
 	color: #fff;
 	text-align:center;
 	font-size: 40px;
-	font-family: myfont, impact, sans-serif;
+	font-family: myfont;
 	opacity: 0.8;
 	margin:auto;
 	min-width:100%;
@@ -60,7 +60,7 @@ text1, text2, text3{
 	background-color: #4CAF50; /* Green */
 	font-size: 100px;
 	color: #001f33;
-	font-family: myfont, impact, sans-serif;
+	font-family: myfont;
 	opacity: 0.8;
 	margin:auto;
 	min-width:100%;

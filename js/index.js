@@ -60,6 +60,11 @@ function onDiscoverDevice(device){
     html = device.name+ "," + device.id;
     listItem.innerHTML = html;
     document.getElementById("bleDeviceList").appendChild(listItem);
+	if(device.name=="GREENHOUSE" && device.id=="D9:E3:F8:B6:B1:86")
+	{
+		document.getElementById("refreshButton").innerHTML = "Connect";
+		document.getElementById("refreshButton").disabled = false;
+	}
 }
 
 
@@ -78,6 +83,9 @@ function conn(){
 function onConnect(){
 	document.getElementById("statusDiv").innerHTML = " Status: Connected";
 	document.getElementById("bleId").innerHTML = ConnDeviceId;
+	document.getElementById("refreshButton").innerHTML = "Connected";
+	document.getElementById("refreshButton").disabled = true;
+	document.getElementById("refreshButton").style.color = "#FFF";
 	ble.startNotification(ConnDeviceId, blue.serviceUUID, blue.rxCharacteristic, onData, onError);
 	 // ble.startNotification(deviceId, bluefruit.serviceUUID, bluefruit.rxCharacteristic, app.onData, app.onError);
 }
