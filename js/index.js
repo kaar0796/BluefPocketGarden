@@ -129,7 +129,7 @@ function myGarden(){
 function updateS(temp, light, moist)
 {
 	/*DEAFULT VALUES - DONT CHANGE*/
-	var p1moist = document.getElementById("sendDiv").innerHTML;
+	var p1moist = document.getElementById("receiveDiv").innerHTML;
 	var p1temp = 13;
 	var p1light = 8;
 	if(moist != p1moist) // Check if moist sensor information is different that the default values
