@@ -144,7 +144,7 @@ function updateS(temp, light, moist)
 	var p1moist = document.getElementById("receiveDiv").innerHTML;
 	if(moist != p1moist) // Check if moist sensor information is different that the default values
 	{
-		document.getElementById("moistinfo").innerHTML = "Moisture is "+moist+" and it should be "+p1moist; // If not ok, shows which changes need to be done.
+		document.getElementById("moistinfo").innerHTML = "Moisture is "+p1moist+" and it should be "+moist; // If not ok, shows which changes need to be done.
 	}
 	else
 	{

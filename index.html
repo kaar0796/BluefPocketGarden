@@ -21,9 +21,9 @@
 		<ul id="bleDeviceList" style="display:none;"> </ul>  
 		<!--<button id="refreshButton" onClick = "refreshDeviceList()">Refresh</button>-->
 		<br>
-		<div id="statusDiv">Status: Disconnected</div>
-		<div id="bleId">DeviceId:</div>
-		<div id="debugDiv"></div>
+		<div id="statusDiv" style="display:none;">Status: Disconnected</div>
+		<div id="bleId" style="display:none;">DeviceId:</div>
+		<div id="debugDiv" style="display:none;"></div>
 		<br>
 		<div class="actions">
 			<button id="refreshButton" onClick = "conn()">Connect</button>
@@ -45,12 +45,12 @@
 			<p id="lightinfo">&nbsp;</p>
 		</div>
 		<br>
-		<div id="sendDiv"></div>
+		<div id="sendDiv" style="display:none;"></div>
 		<br><br>
 		<!--<div class="actions">
 			<button id="disconnectButton"onClick="disconnect()">Disconnect</button>
 		</div>-->
-		<div id="receiveDiv"></div>
+		<div id="receiveDiv" style="display:none;"></div>
     </body>
 </html>
 			
