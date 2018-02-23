@@ -10,21 +10,21 @@ body{
 text1{
 	
 	font-size: 30px;
-	margin-left: 110px;
+	margin-left: 190px;
 	font-family: myfont;
 	color: #2e004d;
 }
 text2{
 	
 	font-size: 30px;
-	margin-left: 90px;
+	margin-left: 160px;
 	font-family: myfont;
 	color: #2e004d;
 }
 text3{
 	
 	font-size: 30px;
-	margin-left: 85px;
+	margin-left: 160px;
 	font-family: myfont;
 	color: #2e004d;
 }
@@ -43,8 +43,10 @@ text3{
     -ms-transform: scale(4.5); /* IE 9 */
     -webkit-transform: scale(4.5); /* Chrome, Safari, Opera */
     transform: scale(4.5);
-	margin-left: 143px;
+	margin-left: 220px;
 	margin-top: 20px;
+	
+	
 	
 	
 }
